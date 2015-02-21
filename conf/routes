@@ -11,3 +11,6 @@ GET        /assets/*file           controllers.Assets.at(path="/public", file)
 # OAuth2 Stuff
 GET        /_oauth-callback        util.OAuth2.callback(code: Option[String])
 GET        /_oauth-success         util.OAuth2.success
+
+# Quiz
+GET        /quiz                   controllers.Application.quiz
